@@ -1,0 +1,6 @@
+#dict with tuple keys
+loc={
+    (40.7128, -75.043):'new york',
+    (34.0543, -199,434): 'melbourne'
+}
+print(loc[(40.7128, -75.043)])
