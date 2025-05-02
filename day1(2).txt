@@ -1,0 +1,5 @@
+# list with in a tuple
+student=("sai",[22,23,24],['math','science','english'])
+print(student[0])
+print(student[2][1])
+print(student[1][1])
