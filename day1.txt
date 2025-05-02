@@ -1,0 +1,13 @@
+p={'name':'sai','age':20,'city':'vijayawada'}
+print(p)
+p["age"]=21
+print(p)
+p['email']='venkatan2@gmail.com'
+print(p)
+del p['email']
+print(p)
+print(p.keys())
+print(p.values())
+print(p.items())
+print(p.get("age"))0,'FINANCE')
+/
