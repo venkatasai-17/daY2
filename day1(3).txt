@@ -1,0 +1,6 @@
+inf=("sai",67,'engineer')
+print(inf[0])
+print(inf[-3])
+print(len(inf))
+print(inf *2)
+print(inf + (3,4))
