@@ -1,0 +1,6 @@
+#nested dictionary
+info={
+    'sai':{"salary":150000,"perks":20000},
+    'mahe':{"salary":170000,"perks":30000},
+}
+print(info['sai']['salary'])
