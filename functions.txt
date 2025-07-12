@@ -1,0 +1,13 @@
+def cal(a,b):
+    def add():
+        return a+b
+    def sub():
+        return a-b
+    def mul():
+        return a*b
+    print("addition",add())
+    print("subtract",sub())
+    print("multiplication",mul())
+a=int(input("enter the number:"))
+b=int(input("enter the number:"))
+cal(a,b)
