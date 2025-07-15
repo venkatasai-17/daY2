@@ -1,0 +1,19 @@
+fact=1
+def factorial(n):
+    global fact
+    fact=1
+    for i in range(1,n+1):
+        fact *=i
+    return fact
+num=int(input("enter the number"))
+if num<0:
+    print("cannot derive fact for -ve number")
+else:
+    factorial(num)
+    print(f"factorial of num1 is",fact)
+num1=int(input("enter the number"))
+if num1>0:
+    print("can derive fact for +ve number")
+else:
+    factorial(num1)
+    print(f"fatorial of num is",fact)
