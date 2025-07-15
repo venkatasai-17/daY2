@@ -1,0 +1,6 @@
+def rsting(s):
+    if len(s)==0:
+        return s
+    return rsting(s[1:])+s[0]
+text =input("enter a word")
+print(rsting(text))
