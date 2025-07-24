@@ -1,0 +1,11 @@
+#premuatations of char in tree recursion
+def premute(s,bucket=''):
+    if not s:
+        print(bucket)
+        return
+    for i in range(len(s)):
+        ns=s[:i]+s[i+1:]
+        premute(ns,bucket+s[i])
+text=input("enter a nane")
+print("possibilites of combination")
+premute(text)
