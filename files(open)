@@ -1,0 +1,4 @@
+file=open('sai.text','r')
+data=file.read()
+print("file data in sai.text:",data)
+file.close()
