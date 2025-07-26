@@ -1,0 +1,3 @@
+f=open('sai.text','w')
+f.write("there are no water in this planet...")
+f.close()
