@@ -1,0 +1,31 @@
+def snake_game():
+    snake = [[5, 5]]
+    food = place_food(snake)
+    score = 0
+    
+    while True:
+        print_board(snake, food)
+        print("Score:", score)
+        direction = input("enter direction(up/down/left/right):")
+        
+        snake,result=move_snake(snake,direction)
+        
+        if result == "wall":
+            print("you hit the wall,Game over!!!")
+            break
+        elif result == "self":
+            print("you hit yourself...Game over!!!")
+            break
+        elif result == food:  # Snake ate food
+            score += 1
+            food = place_food(snake)
+            # No pop(0) here, so the snake grows
+        elif result == False: # Invalid direction
+            # If move_snake returns False, it's an invalid direction, do nothing and continue
+            continue
+        else:  # Normal movement, no food eaten
+            snake.pop(0) # Remove tail as the snake moves
+
+    print("Final Score:",score)
+
+snake_game() # Call the function to start the game
